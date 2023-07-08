@@ -5,7 +5,7 @@ pipeline
     {
         buildDiscarder(logRotator(numToKeepStr: '3'))
         timestamps()
-        overrideIndexTriggers(false)  
+        overrideIndexTriggers(true)  
     }   
     stages
     {
@@ -13,7 +13,7 @@ pipeline
         {
             steps
             {
-                echo "Hello world 2"
+                echo "Hello world 3"
             }
         }
     }
