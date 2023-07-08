@@ -5,7 +5,7 @@ pipeline
     {
         buildDiscarder(logRotator(numToKeepStr: '3'))
         timestamps()
-        //overrideIndexTriggers(false)  
+        overrideIndexTriggers(false)  
     }   
     stages
     {
