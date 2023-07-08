@@ -5,7 +5,8 @@ pipeline
     {
         buildDiscarder(logRotator(numToKeepStr: '3'))
         timestamps()
-        overrideIndexTriggers(true)  
+        overrideIndexTriggers(true)  // JOb will be auto triggered when new commit is picked up
+        //overrideIndexTriggers(false)  // JOb will not be auto triggered when new commit is picked up
     }   
     stages
     {
