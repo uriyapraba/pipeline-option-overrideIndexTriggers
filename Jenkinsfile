@@ -23,7 +23,7 @@ pipeline
                     def build_number = currentBuild.number
                     echo "${build_number}"
                 }
-                echo "count 2"
+                echo "count 3"
             }
         }
     }
